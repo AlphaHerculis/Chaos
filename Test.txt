@@ -3,9 +3,9 @@ Git：目前世界上最先进的分布式版本控制系统。
 优点：1、更方便的储存版本；2、可恢复之前的版本；3、更方便进行版本的对比；4、协同合作
 
 使用前的简单配置：
-    git config --global user.name 'Chaos'
-    git config --global user.email 'Chaos@163.com'
-    git config --global --list
+    git config --global user.name 'Chaos'   声明用户名
+    git config --global user.email 'Chaos@163.com'  声明用户邮箱
+    git config --global --list  查看用户信息
 建立git仓库：
     git init 将当前所在目录文件夹创建为git仓库/初始化git仓库
 git提交版本：
@@ -20,3 +20,5 @@ git提交版本：
             注：1.回退至上上个版本：HEAD^^;回退至以前的100个版本：HEAD~100；
                 2.“版本穿越”：若有回退之前的版本号，则可以通过--hard [commit_id前4~7位]命令实现回到未来———即回到回退版本操作之前；
                 3.Git内部有一个HEAD指针，其指向哪个版本号，那么当前版本就是哪个，因此我们可以实现版本历史的穿梭
+    git reflog  记录执行命令历史数据（可用来查文件的版本号，以实现版本穿越——回到过去/未来版本）
+
